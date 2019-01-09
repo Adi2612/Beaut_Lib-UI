@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
-
+import Header from './main';
+import Middle from './middle';
+import Test from './test';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div>
+          <Header />
+          
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <Test />
+          <Middle title= "Your recent searches" />
+          <Middle title= "Comedies" />
+          <Middle title= "Literature" />
+          <Middle title= "Biographies" />
+          <Middle title= "LOve Stories" />
+
+       </div>
     );
   }
 }
